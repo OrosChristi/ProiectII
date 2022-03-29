@@ -1,0 +1,14 @@
+C:\Users\computer\source\repos\WebApplication1\DataProject\bin\Debug\DataProject.dll.config
+C:\Users\computer\source\repos\WebApplication1\DataProject\bin\Debug\DataProject.dll
+C:\Users\computer\source\repos\WebApplication1\DataProject\bin\Debug\DataProject.pdb
+C:\Users\computer\source\repos\WebApplication1\DataProject\bin\Debug\EntityFramework.dll
+C:\Users\computer\source\repos\WebApplication1\DataProject\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\computer\source\repos\WebApplication1\DataProject\bin\Debug\EntityFramework.xml
+C:\Users\computer\source\repos\WebApplication1\DataProject\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\computer\source\repos\WebApplication1\DataProject\obj\Debug\DataProject.csproj.AssemblyReference.cache
+C:\Users\computer\source\repos\WebApplication1\DataProject\obj\Debug\DataProject.csproj.CoreCompileInputs.cache
+C:\Users\computer\source\repos\WebApplication1\DataProject\obj\Debug\DataProject.csproj.CopyComplete
+C:\Users\computer\source\repos\WebApplication1\DataProject\obj\Debug\DataProject.dll
+C:\Users\computer\source\repos\WebApplication1\DataProject\obj\Debug\DataProject.pdb
+C:\Users\computer\source\repos\WebApplication1\DataProject\obj\Debug\DataProject.Migrations.AddUsersTable.resources
+C:\Users\computer\source\repos\WebApplication1\DataProject\obj\Debug\DataProject.csproj.GenerateResource.cache
