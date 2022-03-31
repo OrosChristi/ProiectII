@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "442a44a4-b365-469f-8c51-8eb710c8a093": {
+      "ProjectGuid": "442a44a4-b365-469f-8c51-8eb710c8a093",
+      "DisplayName": "DataProject",
+      "ColorIndex": 0
+    },
+    "be38a6d4-c988-4f83-8103-b1f6d85c70f7": {
+      "ProjectGuid": "be38a6d4-c988-4f83-8103-b1f6d85c70f7",
+      "DisplayName": "WebApplication1",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
