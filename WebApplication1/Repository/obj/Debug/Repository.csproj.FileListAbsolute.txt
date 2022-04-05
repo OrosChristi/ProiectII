@@ -1,0 +1,15 @@
+C:\Users\computer\Desktop\WebApplication1\Repository\bin\Debug\Repository.dll.config
+C:\Users\computer\Desktop\WebApplication1\Repository\bin\Debug\Repository.dll
+C:\Users\computer\Desktop\WebApplication1\Repository\bin\Debug\Repository.pdb
+C:\Users\computer\Desktop\WebApplication1\Repository\bin\Debug\DataProject.dll
+C:\Users\computer\Desktop\WebApplication1\Repository\bin\Debug\EntityFramework.dll
+C:\Users\computer\Desktop\WebApplication1\Repository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\computer\Desktop\WebApplication1\Repository\bin\Debug\DataProject.pdb
+C:\Users\computer\Desktop\WebApplication1\Repository\bin\Debug\DataProject.dll.config
+C:\Users\computer\Desktop\WebApplication1\Repository\bin\Debug\EntityFramework.xml
+C:\Users\computer\Desktop\WebApplication1\Repository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\computer\Desktop\WebApplication1\Repository\obj\Debug\Repository.csproj.AssemblyReference.cache
+C:\Users\computer\Desktop\WebApplication1\Repository\obj\Debug\Repository.csproj.CoreCompileInputs.cache
+C:\Users\computer\Desktop\WebApplication1\Repository\obj\Debug\Repository.csproj.CopyComplete
+C:\Users\computer\Desktop\WebApplication1\Repository\obj\Debug\Repository.dll
+C:\Users\computer\Desktop\WebApplication1\Repository\obj\Debug\Repository.pdb
