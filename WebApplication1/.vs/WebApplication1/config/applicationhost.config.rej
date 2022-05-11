@@ -1,0 +1,9 @@
+diff a/WebApplication1/.vs/WebApplication1/config/applicationhost.config b/WebApplication1/.vs/WebApplication1/config/applicationhost.config	(rejected hunks)
+@@ -162,7 +162,6 @@
+             </site>
+             <site name="WebApplication1" id="2">
+                 <application path="/" applicationPool="Clr4IntegratedAppPool">
+-                    <virtualDirectory path="/" physicalPath="C:\Users\computer\source\repos\WebApplication1\WebApplication1" />
+                     <virtualDirectory path="/" physicalPath="C:\Users\Bogdan\ProjectII\ProiectII\WebApplication1\WebApplication1" />
+                 </application>
+                 <bindings>

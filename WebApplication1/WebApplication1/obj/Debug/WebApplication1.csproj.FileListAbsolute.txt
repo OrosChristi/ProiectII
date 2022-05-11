@@ -164,6 +164,7 @@ C:\Users\Bogdan\ProjectII\ProiectII\WebApplication1\WebApplication1\obj\Debug\We
 C:\Users\Bogdan\ProjectII\ProiectII\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
 C:\Users\Bogdan\ProjectII\ProiectII\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\Bogdan\ProjectII\ProiectII\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+<<<<<<< HEAD
 C:\Users\computer\Desktop\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
 C:\Users\computer\Desktop\WebApplication1\WebApplication1\bin\WebApplication1.dll
 C:\Users\computer\Desktop\WebApplication1\WebApplication1\bin\WebApplication1.pdb
@@ -520,3 +521,5 @@ D:\ProiectII\ProiectII\WebApplication1\WebApplication1\obj\Debug\WebApplication1
 D:\ProiectII\ProiectII\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
 D:\ProiectII\ProiectII\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
 D:\ProiectII\ProiectII\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+=======
+>>>>>>> e1e09de4eb3cd78b283d59d3031c6b77aa52a7a4

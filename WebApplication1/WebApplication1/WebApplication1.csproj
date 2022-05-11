@@ -183,6 +183,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
     <Content Include="Views\Home\Register.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\Autoes\Create.cshtml" />
     <Content Include="Views\Autoes\Delete.cshtml" />
     <Content Include="Views\Autoes\Details.cshtml" />
@@ -198,6 +199,11 @@
     <Folder Include="App_Data\" />
     <Folder Include="Views\AuthLog\" />
     <Folder Include="Views\Role\" />
+=======
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+>>>>>>> e1e09de4eb3cd78b283d59d3031c6b77aa52a7a4
     <Folder Include="Views\Styles\" />
   </ItemGroup>
   <ItemGroup>
