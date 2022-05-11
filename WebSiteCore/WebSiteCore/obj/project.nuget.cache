@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wCWgtw571FzdtwZGibRsa0bnItxiNadkzg1/tdt/+f96yJzLrKFeqbyZMaBKeTwkA4q26vTkUY9QyCaLg48HrQ==",
+  "dgSpecHash": "rFrM4V6Z+ZMAqXZyzgTGHAK02y2ZSG0m1lCHj1E7IpYrbwCpFGjLR03GO4Ac8or7aDwwpwd4Ml70825CddTB4g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\computer\\source\\repos\\WebSiteCore\\WebSiteCore\\WebSiteCore.csproj",
+  "projectFilePath": "C:\\Users\\computer\\Desktop\\ProiectII\\ProiectII\\ProiectII\\WebSiteCore\\WebSiteCore\\WebSiteCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\computer\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.24\\microsoft.aspnetcore.cryptography.internal.3.1.24.nupkg.sha512",
     "C:\\Users\\computer\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.24\\microsoft.aspnetcore.cryptography.keyderivation.3.1.24.nupkg.sha512",

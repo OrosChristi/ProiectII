@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WebSiteCore.Models
 {
-    public class Auto
+    public class Auto: Base
     {
         public int ID { get; set; }
         public string Brand { get; set; }
@@ -18,5 +18,6 @@ namespace WebSiteCore.Models
         public decimal EngineCapacity { get; set; }
         public double Price { get; set; }
         public Category Category { get; set; }
+        
     }
 }

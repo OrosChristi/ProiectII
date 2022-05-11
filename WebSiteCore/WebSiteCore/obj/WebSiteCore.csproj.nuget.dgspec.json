@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\computer\\source\\repos\\WebSiteCore\\WebSiteCore\\WebSiteCore.csproj": {}
+    "C:\\Users\\computer\\Desktop\\ProiectII\\ProiectII\\ProiectII\\WebSiteCore\\WebSiteCore\\WebSiteCore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\computer\\source\\repos\\WebSiteCore\\WebSiteCore\\WebSiteCore.csproj": {
+    "C:\\Users\\computer\\Desktop\\ProiectII\\ProiectII\\ProiectII\\WebSiteCore\\WebSiteCore\\WebSiteCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\computer\\source\\repos\\WebSiteCore\\WebSiteCore\\WebSiteCore.csproj",
+        "projectUniqueName": "C:\\Users\\computer\\Desktop\\ProiectII\\ProiectII\\ProiectII\\WebSiteCore\\WebSiteCore\\WebSiteCore.csproj",
         "projectName": "WebSiteCore",
-        "projectPath": "C:\\Users\\computer\\source\\repos\\WebSiteCore\\WebSiteCore\\WebSiteCore.csproj",
+        "projectPath": "C:\\Users\\computer\\Desktop\\ProiectII\\ProiectII\\ProiectII\\WebSiteCore\\WebSiteCore\\WebSiteCore.csproj",
         "packagesPath": "C:\\Users\\computer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\computer\\source\\repos\\WebSiteCore\\WebSiteCore\\obj\\",
+        "outputPath": "C:\\Users\\computer\\Desktop\\ProiectII\\ProiectII\\ProiectII\\WebSiteCore\\WebSiteCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\computer\\AppData\\Roaming\\NuGet\\NuGet.Config",

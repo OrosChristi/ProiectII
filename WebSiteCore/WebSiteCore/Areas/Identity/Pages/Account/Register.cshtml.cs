@@ -20,7 +20,7 @@ namespace WebSiteCore.Areas.Identity.Pages.Account
     public class RegisterModel : PageModel
     {
         private readonly SignInManager<IdentityUser> _signInManager;
-        private readonly RoleManager<IdentityUser> _roleManager;
+        //private readonly RoleManager<IdentityUser> _roleManager;
         private readonly UserManager<IdentityUser> _userManager;
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
@@ -29,10 +29,10 @@ namespace WebSiteCore.Areas.Identity.Pages.Account
             UserManager<IdentityUser> userManager,
             SignInManager<IdentityUser> signInManager,
             ILogger<RegisterModel> logger,
-            IEmailSender emailSender,
-            RoleManager<IdentityUser> roleManager)
+            IEmailSender emailSender 
+              )
         {
-            _roleManager = roleManager;
+            
             _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
@@ -79,9 +79,12 @@ namespace WebSiteCore.Areas.Identity.Pages.Account
             {
                 var user = new IdentityUser { UserName = Input.Email, Email = Input.Email };
                 var result = await _userManager.CreateAsync(user, Input.Password);
-                var Role = await _userManager.AddToRoleAsync(user, "Administrator");
+                
                 if (result.Succeeded)
                 {
+
+                    var role = await _userManager.AddToRoleAsync(user, "Administrator");
+
                     _logger.LogInformation("User created a new account with password.");
 
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);

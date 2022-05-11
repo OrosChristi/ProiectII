@@ -30,7 +30,7 @@ namespace WebSiteCore
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddDefaultIdentity<IdentityUser>().AddRoles<IdentityRole>().AddEntityFrameworkStores<DataBaseContext>();
-
+            
             services.AddHttpContextAccessor();
             services.AddSession();
 
