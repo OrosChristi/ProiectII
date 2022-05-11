@@ -56,8 +56,28 @@
     <Compile Include="Migrations\202203091253316_AddUsersTable.designer.cs">
       <DependentUpon>202203091253316_AddUsersTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202204061603157_AddAutoTable.cs" />
+    <Compile Include="Migrations\202204061603157_AddAutoTable.designer.cs">
+      <DependentUpon>202204061603157_AddAutoTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202204061615493_AddOrderTable.cs" />
+    <Compile Include="Migrations\202204061615493_AddOrderTable.designer.cs">
+      <DependentUpon>202204061615493_AddOrderTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202204281238349_AddRolesTable.cs" />
+    <Compile Include="Migrations\202204281238349_AddRolesTable.designer.cs">
+      <DependentUpon>202204281238349_AddRolesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202204281244172_AddUsersRoleTable.cs" />
+    <Compile Include="Migrations\202204281244172_AddUsersRoleTable.designer.cs">
+      <DependentUpon>202204281244172_AddUsersRoleTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Auto.cs" />
+    <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\Role.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="Models\UsersRole.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -67,6 +87,18 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202203091253316_AddUsersTable.resx">
       <DependentUpon>202203091253316_AddUsersTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204061603157_AddAutoTable.resx">
+      <DependentUpon>202204061603157_AddAutoTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204061615493_AddOrderTable.resx">
+      <DependentUpon>202204061615493_AddOrderTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204281238349_AddRolesTable.resx">
+      <DependentUpon>202204281238349_AddRolesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204281244172_AddUsersRoleTable.resx">
+      <DependentUpon>202204281244172_AddUsersRoleTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

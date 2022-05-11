@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Business.cs" />
+    <Compile Include="AutoRepo.cs" />
     <Compile Include="UsersRepo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -16,14 +16,14 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPost]
-        public JsonResult LoginUser(UserVM userVM)
+        public ActionResult LoginUser(LoginVM userVM)
         {   
             var user = Business.UserRepo.GetUserByUsername(userVM.Username);
             bool loggedIn = true;
             if (user == null)
             {
                 loggedIn = false;
-                return Json(loggedIn);
+                return RedirectToAction("Login");
             }
             if (user.Password != userVM.Password)
             {
@@ -36,7 +36,12 @@ namespace WebApplication1.Controllers
                 user.LastLoginDate = DateTime.Now;
                 var update = Business.UserRepo.Update(user);
             }
-
+            if (user != null)
+            {
+                Session["ID"] = user.ID.ToString();
+                Session["Username"] = user.Username.ToString();
+                return Json(loggedIn);
+            }
             return Json(loggedIn);
 
         }

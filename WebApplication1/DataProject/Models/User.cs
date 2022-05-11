@@ -13,5 +13,7 @@ namespace  DataProject.Models
         public string Email { get; set;  }
         public DateTime CreatedDate { get; set;  }
         public DateTime? LastLoginDate { get; set;  }
+
+        public virtual List<UsersRole> Roles { get; set; }
     }
 }

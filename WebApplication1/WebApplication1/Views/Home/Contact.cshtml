@@ -1,17 +1,50 @@
-﻿@{
-    ViewBag.Title = "Contact";
-}
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+﻿@{ ViewBag.Title = "Contact"; }
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+<!DOCTYPE html>
+
+<html>
+<head>
+    
+    <script src="~/Scripts/app_index.js"></script>
+    <style>
+        .img7 {
+            padding: 5px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <img class="img7" src="~/images/logo.jpeg">
+
+    <h1> Program </h1>
+    <p> <b> Luni - Vineri: </b> 08:00 - 22:00 </p>
+    <p> <b>Sâmbătă:</b>        10:00 - 19:00 </p>
+    <p> <b>Duminică:</b>       închis </p>
+
+    <br />
+    <br />
+
+    <address>
+        <b>Adresă: </b>Strada George Barițiu nr. 10
+    </address>
+
+    <p> <b>Telefon:</b> 0756026266</p>
+
+    @*<p> <b>Mail:</b> autoplus@yahoo.ro</p>*@
+
+    <address>
+        <strong><b>Mail:</b></strong>   <a href="">autoplus@yahoo.ro</a><br />
+
+    </address>
+
+    <h3>My Google Maps Demo</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&v=weekly"
+            async></script>
+
+</body>
+</html>

@@ -10,7 +10,10 @@ namespace DataProject
     {
         public DataBaseContext() : base("name = testconn") { }
         public DbSet<User> Users { get; set; }
-
+        public DbSet<Auto> Auto { get; set; }
+        public DbSet<Order> Order { get; set; }        
+        public DbSet<Role> Roles { get; set; }
+        public DbSet<UsersRole> UserRoles { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
 

@@ -5,7 +5,7 @@ using System.Web;
 
 namespace  WebApplication1.ViewModels
 {
-    public class UserVM
+    public class LoginVM
     {
         public int ID { get; set;  }
         public string Username { get; set;  }
@@ -13,5 +13,6 @@ namespace  WebApplication1.ViewModels
         public string Email { get; set;  }
         public DateTime CreatedDate { get; set;  }
         public DateTime? LastLoginDate { get; set;  }
+        public List<int> RoleIds { get; set; }
     }
 }

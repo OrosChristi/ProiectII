@@ -16,7 +16,7 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPost]
-        public JsonResult CreateUser(UserVM userVM)
+        public JsonResult CreateUser(LoginVM userVM)
         {
             var user = new User();
             user.Email = userVM.Email;

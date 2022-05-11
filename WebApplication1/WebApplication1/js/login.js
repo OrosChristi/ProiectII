@@ -11,14 +11,15 @@ function Login() {
         contentType: 'application/json',
         data: JSON.stringify(userVM),
         success: function (response) {
-            if (response === 1) {
-                console.log(response)
+            if (response == true) {
+                alert("loged successfully!!!");
             } else {
-                alert("gresit");
+                alert("didnt loged!!!");
             }
         },
         error: function (jqXHR, textStatus, errorThrown) {
             console.log(textStatus, errorThrown);
+            
         }
     });
         
