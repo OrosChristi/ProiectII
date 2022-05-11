@@ -11,9 +11,8 @@ namespace WebSiteCore.Models
         {
 
         }
-        //public DbSet<User> Users { get; set; }
-
-        public DbSet<Base> Base { get; set; }
+        
+        public DbSet<Photo> Photo { get; set; }
         public DbSet<Auto> Auto { get; set; }
         public DbSet<Order> Order { get; set; }
        
@@ -21,8 +20,8 @@ namespace WebSiteCore.Models
         {
             base.OnModelCreating(modelBuilder);
 
-            //modelBuilder.Entity<Category>().HasData(new Category { CategoryId = 1, CategoryName = "" });
-            //modelBuilder.Entity<Category>().HasData(new Category { CategoryId = 2, CategoryName = "" });
+            //modelBuilder.Entity<Category>().HasData(new Category { CategoryId = 1, CategoryName = "Sedan" });
+            //modelBuilder.Entity<Category>().HasData(new Category { CategoryId = 2, CategoryName = "Break" });
             //modelBuilder.Entity<Category>().HasData(new Category { CategoryId = 3, CategoryName = "" });
         }
 

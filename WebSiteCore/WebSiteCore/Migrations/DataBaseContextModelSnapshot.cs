@@ -307,6 +307,29 @@ namespace WebSiteCore.Migrations
                     b.ToTable("Order");
                 });
 
+            modelBuilder.Entity("WebSiteCore.Models.Photo", b =>
+                {
+                    b.Property<int>("photoID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("AutoId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UrlPath")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("photoID");
+
+                    b.HasIndex("AutoId");
+
+                    b.ToTable("Photo");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -370,6 +393,15 @@ namespace WebSiteCore.Migrations
                     b.HasOne("WebSiteCore.Models.Auto", "Auto")
                         .WithMany()
                         .HasForeignKey("AutoID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("WebSiteCore.Models.Photo", b =>
+                {
+                    b.HasOne("WebSiteCore.Models.Auto", "Auto")
+                        .WithMany()
+                        .HasForeignKey("AutoId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

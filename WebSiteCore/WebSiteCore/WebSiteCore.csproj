@@ -5,6 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20220511135101_AddBase.cs" />
+    <Compile Remove="Migrations\20220511135101_AddBase.Designer.cs" />
+    <Compile Remove="Migrations\20220511140830_AddBase.cs" />
+    <Compile Remove="Migrations\20220511140830_AddBase.Designer.cs" />
+    <Compile Remove="Migrations\20220511141315_AddBase.cs" />
+    <Compile Remove="Migrations\20220511141315_AddBase.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.24" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.24" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.24" />
