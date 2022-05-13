@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,6 +19,7 @@ namespace WebSiteCore.Models
         public decimal EngineCapacity { get; set; }
         public double Price { get; set; }
         public Category Category { get; set; }
+        public List<Photo> Photos { get; set; }
         
     }
 }

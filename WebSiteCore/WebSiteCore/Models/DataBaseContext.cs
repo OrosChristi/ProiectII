@@ -11,10 +11,12 @@ namespace WebSiteCore.Models
         {
 
         }
-        //public DbSet<User> Users { get; set; }
+        public DbSet<Category> Categories { get; set; }
         public DbSet<Auto> Auto { get; set; }
         public DbSet<Order> Order { get; set; }
-       
+        public DbSet<Photo> Photo { get; set; }
+        public DbSet<AutoBrand> AutoBrand { get; set; }
+        public DbSet<AutoName> AutoNames { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

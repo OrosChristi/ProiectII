@@ -263,6 +263,41 @@ namespace WebSiteCore.Migrations
                     b.ToTable("Auto");
                 });
 
+            modelBuilder.Entity("WebSiteCore.Models.AutoBrand", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("AutoBrand");
+                });
+
+            modelBuilder.Entity("WebSiteCore.Models.AutoName", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int?>("AutoBrandId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AutoBrandId");
+
+                    b.ToTable("AutoNames");
+                });
+
             modelBuilder.Entity("WebSiteCore.Models.Category", b =>
                 {
                     b.Property<int>("CategoryId")
@@ -281,7 +316,7 @@ namespace WebSiteCore.Migrations
 
                     b.HasKey("CategoryId");
 
-                    b.ToTable("Category");
+                    b.ToTable("Categories");
                 });
 
             modelBuilder.Entity("WebSiteCore.Models.Order", b =>
@@ -305,6 +340,29 @@ namespace WebSiteCore.Migrations
                     b.HasIndex("AutoID");
 
                     b.ToTable("Order");
+                });
+
+            modelBuilder.Entity("WebSiteCore.Models.Photo", b =>
+                {
+                    b.Property<int>("PhotoId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("AutoId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UrlPath")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("PhotoId");
+
+                    b.HasIndex("AutoId");
+
+                    b.ToTable("Photo");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -365,11 +423,27 @@ namespace WebSiteCore.Migrations
                         .HasForeignKey("CategoryId");
                 });
 
+            modelBuilder.Entity("WebSiteCore.Models.AutoName", b =>
+                {
+                    b.HasOne("WebSiteCore.Models.AutoBrand", "AutoBrand")
+                        .WithMany("AutoNames")
+                        .HasForeignKey("AutoBrandId");
+                });
+
             modelBuilder.Entity("WebSiteCore.Models.Order", b =>
                 {
                     b.HasOne("WebSiteCore.Models.Auto", "Auto")
                         .WithMany()
                         .HasForeignKey("AutoID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("WebSiteCore.Models.Photo", b =>
+                {
+                    b.HasOne("WebSiteCore.Models.Auto", "Auto")
+                        .WithMany("Photos")
+                        .HasForeignKey("AutoId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

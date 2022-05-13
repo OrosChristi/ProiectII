@@ -1,4 +1,4 @@
-﻿@model WebSiteCore.Models.Auto
+﻿@model WebSiteCore.ViewModels.AutoAddViewModel
 
 @{
     ViewData["Title"] = "Create";
@@ -11,22 +11,38 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form method="post" enctype="multipart/form-data" asp-action="Create" asp-controller="Auto">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Brand" class="control-label"></label>
-                <input asp-for="Brand" class="form-control" />
-                <span asp-validation-for="Brand" class="text-danger"></span>
+           <select asp-for="Brand">
+                 <option value="Audi">Audi</option>
+                 <option value="Bmw">Bmw</option>
+               <option value="Mercedes">Mercedes</option>
+                 <option value="Ford">Ford</option>
+                   </select>
+                   <span asp-validation-for="Brand" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
+           <select asp-for="Name">
+                 <option value="A4">A4</option>
+                 <option value="Seria5">Seria5</option>
+               <option value="Sclass">Sclass</option>
+                 <option value="Ford">Ford</option>
+                   </select>
+                   <span asp-validation-for="Name" class="text-danger"></span>
+               
             </div>
             <div class="form-group">
-                <label asp-for="Year" class="control-label"></label>
-                <input asp-for="Year" class="form-control" />
-                <span asp-validation-for="Year" class="text-danger"></span>
+                 <label asp-for="Year" class="control-label"></label>
+           <select asp-for="Year">
+               @for(int i=DateTime.Now.Year-50; i<DateTime.Now.Year; i++)
+                {
+                    <option value="@i">@i</option>
+                }
+                   </select>
+                   <span asp-validation-for="Year" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Km" class="control-label"></label>
@@ -35,8 +51,11 @@
             </div>
             <div class="form-group">
                 <label asp-for="Transmission" class="control-label"></label>
-                <input asp-for="Transmission" class="form-control" />
-                <span asp-validation-for="Transmission" class="text-danger"></span>
+           <select asp-for="Transmission">
+                 <option value="Manual">Manual</option>
+                 <option value="Automatic">Automatic</option>
+                   </select>
+                   <span asp-validation-for="Transmission" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Power" class="control-label"></label>
@@ -50,9 +69,17 @@
             </div>
             <div class="form-group">
                 <label asp-for="Price" class="control-label"></label>
-                <input asp-for="Price" class="form-control" />
+                <input  asp-for="Price" class="form-control" />
                 <span asp-validation-for="Price" class="text-danger"></span>
             </div>
+            <div class="form-group">
+        <label asp-for="PhotoFiles" class="control-label"></label>
+        <div class="custom-file">
+            <input multiple asp-for="PhotoFiles" class="custom-file-input" id="customFile">
+            <label class="custom-file-label" for="customFile">Choose file</label>
+        </div>
+        <span asp-validation-for="PhotoFiles" class="text-danger"></span>
+    </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>

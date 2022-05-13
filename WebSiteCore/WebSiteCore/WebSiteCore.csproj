@@ -5,6 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20220511120109_AddDate2.cs" />
+    <Compile Remove="Migrations\20220511120109_AddDate2.Designer.cs" />
+    <Compile Remove="Migrations\20220511192648_AddPhotos.cs" />
+    <Compile Remove="Migrations\20220511192648_AddPhotos.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.24" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.24" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.24" />
@@ -14,6 +21,10 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Images\" />
   </ItemGroup>
 
 </Project>
