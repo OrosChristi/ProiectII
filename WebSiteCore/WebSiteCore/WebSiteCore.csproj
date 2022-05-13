@@ -11,6 +11,10 @@
     <Compile Remove="Migrations\20220511140830_AddBase.Designer.cs" />
     <Compile Remove="Migrations\20220511141315_AddBase.cs" />
     <Compile Remove="Migrations\20220511141315_AddBase.Designer.cs" />
+    <Compile Remove="Migrations\20220511120109_AddDate2.cs" />
+    <Compile Remove="Migrations\20220511120109_AddDate2.Designer.cs" />
+    <Compile Remove="Migrations\20220511192648_AddPhotos.cs" />
+    <Compile Remove="Migrations\20220511192648_AddPhotos.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -23,6 +27,10 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Images\" />
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,9 @@
+﻿@model IEnumerable<WebSiteCore.Models.Auto>
+
+
+    <h1>Catalog masini</h1>
+
+@foreach (var car in Model)
+{
+    <partial name="_AutoCard" model="car" />
+}
