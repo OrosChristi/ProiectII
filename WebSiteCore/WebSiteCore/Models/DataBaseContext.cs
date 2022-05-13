@@ -21,8 +21,8 @@ namespace WebSiteCore.Models
         {
             base.OnModelCreating(modelBuilder);
 
-            //modelBuilder.Entity<Category>().HasData(new Category { CategoryId = 1, CategoryName = "" });
-            //modelBuilder.Entity<Category>().HasData(new Category { CategoryId = 2, CategoryName = "" });
+            //modelBuilder.Entity<Category>().HasData(new Category { CategoryId = 1, CategoryName = "Sedan" });
+            //modelBuilder.Entity<Category>().HasData(new Category { CategoryId = 2, CategoryName = "Break" });
             //modelBuilder.Entity<Category>().HasData(new Category { CategoryId = 3, CategoryName = "" });
         }
 

@@ -342,3 +342,5 @@ C:\Users\computer\Desktop\ProiectII\ProiectII\ProiectII\WebSiteCore\WebSiteCore\
 C:\Users\computer\Desktop\ProiectII\ProiectII\ProiectII\WebSiteCore\WebSiteCore\obj\Debug\netcoreapp3.1\WebSiteCore.dll
 C:\Users\computer\Desktop\ProiectII\ProiectII\ProiectII\WebSiteCore\WebSiteCore\obj\Debug\netcoreapp3.1\WebSiteCore.pdb
 C:\Users\computer\Desktop\ProiectII\ProiectII\ProiectII\WebSiteCore\WebSiteCore\obj\Debug\netcoreapp3.1\WebSiteCore.genruntimeconfig.cache
+C:\Users\computer\Desktop\ProiectII\ProiectII\ProiectII\WebSiteCore\WebSiteCore\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Index.cshtml.g.cs
+C:\Users\computer\Desktop\ProiectII\ProiectII\ProiectII\WebSiteCore\WebSiteCore\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Manage.cshtml.g.cs
